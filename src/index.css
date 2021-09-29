@@ -1,9 +1,9 @@
 :root {
   --font-header: 'Ubuntu', sans-serif;
   --font-text: 'Open Sans', sans-serif; 
-  --color-pink: #D8A4B1;
+  --color-pink: #a40064;
   --color-yellow: #E3D3AC;
-  --color-light-blue: #c4edff;
+  --color-light-blue: #d5f2ff;
   --color-dark-blue: #599FB8;
   --color-purple: #C9B4DF;
   --color-olive: #8FBF9A;
@@ -36,7 +36,7 @@ html {
 
 body {
   box-sizing: border-box;
-  height: 1500px; 
+  /* height: 1500px;  */
 }
 
 /* Utility Classes  */

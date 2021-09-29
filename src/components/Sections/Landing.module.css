@@ -1,7 +1,8 @@
 
 .landing {
    height: 70rem;
-   background-color: var(--color-light-blue);
+   background-color: black;
+   color: white; 
 }
 
 .title {
@@ -21,11 +22,12 @@
    /* margin-right: 6rem; */
 }
 
-.heading h1 :first-child {
+.heading h1:not(:first-child) {
    /* font-size: 6rem; */
    /* margin-bottom: 2rem; */
    /* font-weight: 500; */
    /* color: white; */
+   font-style: italic;
 }
 
 .heading {

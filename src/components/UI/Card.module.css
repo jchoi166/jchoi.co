@@ -1,0 +1,39 @@
+.card {
+   display: flex; 
+   background-color: var(--color-pink);
+   border-radius: 5px;
+   color: white; 
+   height: 45rem;
+}
+
+.info {
+   padding: 5rem;
+   width: 33%;
+}
+
+.stack {
+   margin-bottom: 1rem; 
+   color: rgb(207, 207, 207);
+}
+
+.header {
+   font-size: 4rem;
+   font-weight: 500;    
+   margin-bottom: 1.5rem; 
+}
+
+.caption {
+   font-size: 1.5rem; 
+}
+
+.images {
+   width: 63%;
+}
+
+.image1 img {
+   width: 80%; 
+}
+
+.image2 img {
+   width: 80%; 
+}

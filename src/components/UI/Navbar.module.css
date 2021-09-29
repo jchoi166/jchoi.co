@@ -1,0 +1,53 @@
+.header {
+   position: fixed; 
+   width: 100%;
+   color: white; 
+   /* background-color: transparent; */
+}
+
+.nav {
+   padding: 2rem; 
+   font-size: 2.3rem;
+   display: flex; 
+   justify-content: space-between;
+   /* background-color: transparent; */
+}
+
+.links {
+   display: flex; 
+   list-style: none;
+}
+
+.links li {
+   /* text-decoration: none; */
+   margin-left: 3rem;
+   /* font-weight: 500;  */
+}
+
+
+.nav1 {
+   /* background-color: transparent;
+   position: absolute;
+   width: 100%; 
+   left: 50%;
+   transform: translateX(-50%); */
+}
+
+/* .nav2Container {
+   width: 100%; 
+   background-color: white;
+   position: fixed; 
+   transition: all .8s;
+   transform: translateY(-100%);
+} */
+
+/* .nav2 {
+   width: 100%;  
+   left: 50%; 
+    transform: translate(-50%, -100%);
+} */
+
+/* .scrolled .nav2Container {
+   transform: translateY(0);
+
+} */
