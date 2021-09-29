@@ -1,0 +1,35 @@
+.header {
+   position: relative; 
+}
+
+.nav {
+   padding: 2rem; 
+   font-size: 2rem;
+}
+
+.nav1 {
+   background-color: transparent;
+   position: absolute;
+   width: 100%; 
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.nav2Container {
+   width: 100%; 
+   background-color: white;
+   position: fixed; 
+   transition: all .8s;
+   transform: translateY(-100%);
+}
+
+.nav2 {
+   /* width: 100%;  */
+   /* left: 50%; */
+   /* transform: translate(-50%, -100%); */
+}
+
+.scrolled .nav2Container {
+   transform: translateY(0);
+
+}
