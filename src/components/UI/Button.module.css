@@ -1,5 +1,10 @@
 button {
-   padding: 1rem;
+   padding: 1.3rem 2rem;
    background-color: white; 
    border: none; 
+   font-family: var(--font-text);
+   border-radius: 30px;
+   margin-right: 10px; 
+   font-weight: 500; 
+   cursor: pointer; 
 }

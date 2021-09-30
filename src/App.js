@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import About from "./components/Sections/About";
 import Landing from "./components/Sections/Landing";
 import Work from "./components/Sections/Work";
 import Navbar from "./components/UI/Navbar";
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <Landing />
       <Work />
+      <About />
     </Fragment>
   );
 }

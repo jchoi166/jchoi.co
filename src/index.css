@@ -2,11 +2,11 @@
   --font-header: 'Ubuntu', sans-serif;
   --font-text: 'Open Sans', sans-serif; 
   --color-pink: #a40064;
-  --color-yellow: #E3D3AC;
+  --color-turquoise: #008a7e;
   --color-light-blue: #d5f2ff;
-  --color-dark-blue: #599FB8;
-  --color-purple: #C9B4DF;
-  --color-olive: #8FBF9A;
+  --color-dark-blue: #083a74;
+  --color-purple: #470092;
+  --color-dark-green: #005714;
 }
 
 h1,
@@ -47,6 +47,12 @@ body {
   padding: 0 2rem;
 }
 
+.divider {
+  margin-top: 7rem;
+  background-color: rgb(219, 219, 219);
+  border: 0;
+  height: 1px; 
+}
 
 /* .preload *{
   -webkit-transition: none !important;

@@ -2,4 +2,43 @@
 .work {
    /* padding-top: 4rem; */
    padding-bottom: 4rem;
+   margin-top: 13rem; 
+}
+
+.cardContainer {
+   display: grid; 
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 3rem;
+}
+
+.card1 {
+   grid-column: 1 / -1;
+   background-color: var(--color-pink);
+}
+.card2 {
+   grid-column: 1 / -1;
+
+   background-color: var(--color-dark-green);
+   /* flex-direction: column; */
+   /* height: 90rem; */
+}
+.card2 img {
+   transform: translateY(-1.5rem);
+}
+.card3 {
+   background-color: var(--color-dark-blue);
+   flex-direction: column;
+   height: 80rem;
+}
+.card3 img {
+   transform: translateY(-1.5rem);
+}
+.card4 {
+   background-color: var(--color-purple);
+   flex-direction: column;
+   height: 80rem;
+}
+.card4 img {
+   width: 120%;
+   transform: translateY(-4rem);
 }
