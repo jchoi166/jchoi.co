@@ -1,19 +1,27 @@
 import { useState, useEffect } from "react"
 
-const useVisible = (ref) => {
+const useVisible = (ref, options) => {
    const [isVisible, setIsVisible] = useState(false)
 
+   if (!options) {
+      options = {
+         root: null, 
+         threshold: 0,
+         rootMargin: '0px'
+      }
+   }
    
    useEffect(() => {
-
       const observer = new IntersectionObserver(
-         ([entry]) => setIsVisible(entry.isIntersecting)
-       )
+         ([entry]) => {
+            setIsVisible(entry.isIntersecting)
+            // console.log(entry.isIntersecting)
+         }, options)
 
       observer.observe(ref.current)
       // Remove the observer as soon as the component is unmounted
       // return () => { observer.disconnect() }
-    }, [ref])
+    }, [ref, options])
   
     return isVisible
 }

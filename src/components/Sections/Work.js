@@ -10,7 +10,7 @@ import InsureImage from '../../assets/InsureImage.png'
 
 const Work = () => {
    return (
-      <section className={`container ${classes.work}`}>
+      <section className={`container ${classes.work}`} id="Work">
          <SectionHeader title='Work'/>
          <div className={classes.cardContainer}>
          <Card 
@@ -42,7 +42,7 @@ const Work = () => {
          />
          <Card 
             className={classes.card4}
-            stack="HTML &middot; Sass"
+            stack="HTML &middot; Sass &middot; Css Grid"
             header="Insure Landing Page"
             caption="This fully responsive, static site was made from a prompt provided by the website - frontendmentor.com. I used this project as an opportunity to build a static website from scratch, using the design of a different website as a reference. Only the assets and design was provided by Front End Mentor."
             image={InsureImage}

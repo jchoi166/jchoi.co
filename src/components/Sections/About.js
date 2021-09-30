@@ -8,7 +8,7 @@ const About = () => {
    return (
       <Fragment>
          <hr className='divider'></hr>
-         <section className={`container ${classes.about}`}>
+         <section className={`container ${classes.about}`} id="About">
             <SectionHeader title='About Me' className={classes.header}/>
             <p className={classes.info}>
                Hello! My name is Jin and I'm a front-end web developer based in Irvine, CA. I have a passion for games, art, and anything else visually inspiring. 

@@ -1,36 +1,58 @@
-
 .landing {
-   height: 70rem;
-   background-color: black;
-   color: white; 
+  height: 70rem;
+  background: url("../../assets/wallpaper.jpg") no-repeat black;
+  color: white;
+  background-size: 50%;
+  background-position: 70% 100%;
 }
 
 .title {
-   height: 100%; 
-   display: flex; 
-   flex-direction: column;
-   justify-content: center;
-   /* max-width: 50%; */
-   
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* max-width: 50%; */
 }
 
 .heading h1 {
-   font-size: 7.5rem;
-   line-height: 8.5rem;
-   font-weight: 500; 
-   /* letter-spacing: .5rem; */
-   /* margin-right: 6rem; */
+  font-size: 7.5rem;
+  line-height: 8.5rem;
+  font-weight: 500;
+  animation: pageLoad 1s ease-out;
+  /* letter-spacing: .5rem; */
+  /* margin-right: 6rem; */
 }
 
 .heading h1:not(:first-child) {
-   /* font-size: 6rem; */
-   /* margin-bottom: 2rem; */
-   /* font-weight: 500; */
-   /* color: white; */
-   font-style: italic;
+  /* font-size: 6rem; */
+  /* margin-bottom: 2rem; */
+  /* font-weight: 500; */
+  /* color: white; */
+  font-style: italic;
 }
 
 .heading {
-   padding: 0 15%;
-   padding-top: 10rem;
+  padding: 0 15%;
+  padding-top: 10rem;
+}
+
+@keyframes pageLoad {
+  0% {
+    /* transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(335deg)
+      rotateY(0deg) rotateZ(1deg) skew(14deg, 0deg); */
+      transform: skew(15deg, 0deg);
+      opacity: 0;
+   }
+   
+   /* 50% {
+      transform: skew(15deg, 0deg);
+      opacity: .5;
+   } */
+
+   100% {
+      /* transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); */
+      transform: skew(0deg, 0deg);
+    opacity: 1;
+  }
 }
