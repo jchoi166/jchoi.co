@@ -1,0 +1,96 @@
+.work {
+  padding-bottom: 4rem;
+  margin-top: 13rem;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 3rem;
+}
+
+.card1 {
+  grid-column: 1 / -1;
+  background-color: var(--color-pink);
+}
+
+.card2 {
+  grid-column: 1 / -1;
+  background-color: var(--color-dark-green);
+}
+.card2 img {
+  transform: translateY(-1.5rem);
+}
+.card2 span {
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+}
+
+.card3 {
+  background-color: var(--color-dark-blue);
+  flex-direction: column;
+  height: 80rem;
+}
+.card3 img {
+  transform: translateY(-1.5rem);
+}
+
+.card4 {
+  background-color: var(--color-purple);
+  flex-direction: column;
+  height: 80rem;
+}
+.card4 img {
+  width: 120%;
+  transform: translateY(-4rem);
+}
+
+.sidenotePrompt {
+  position: relative;
+  font-style: italic;
+}
+
+.sidenoteMessage {
+  visibility: hidden;
+  border-radius: 8px;
+  background-color: #323232;
+  padding: 10px;
+  top: -540%;
+  position: absolute;
+  width: 39rem;
+  display: flex;
+}
+
+.sidenotePrompt:hover .sidenoteMessage {
+  visibility: visible;
+}
+
+@media only screen and (min-width: 1600px) {
+  .cardContainer {
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .card1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card1 img {
+    transform: translateY(-3rem);
+  }
+
+  .card2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card4 img {
+    width: 100%;
+  }
+
+  .cardContainer {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,60 @@
+.landing {
+  height: 70rem;
+  background: url("../../assets/wallpaper.jpg") no-repeat black;
+  color: white;
+  background-size: 50%;
+  background-position: 70% 100%;
+}
+
+.title {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading h1 {
+  font-size: 7.5rem;
+  line-height: 8.5rem;
+  font-weight: 500;
+  animation: pageLoad 1s ease-out;
+}
+
+.heading h1:not(:first-child) {
+  font-style: italic;
+}
+
+.heading {
+  padding: 0 15%;
+  padding-top: 10rem;
+}
+
+@keyframes pageLoad {
+  0% {
+      transform: skew(15deg, 0deg);
+      opacity: 0;
+   }
+   100% {
+      transform: skew(0deg, 0deg);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+   .landing {
+     background-size: 90%;
+   }
+   .heading h1 {
+      font-size: 6.5rem;
+      line-height: 7.5rem;
+      font-weight: 500;
+    }
+ }
+
+@media only screen and (max-width: 400px) {
+   .heading {
+      padding: 0;
+   }
+}
+
+
