@@ -19,7 +19,7 @@ const Landing = (props) => {
 
 
    return (
-      <section className={classes.landing} ref={landing}>
+      <section className={classes.landing} ref={landing} id='Landing'>
          <div className={`container ${classes.title}`}>
             <div className={classes.heading}>
                <h1>Jin Choi</h1>

@@ -20,7 +20,6 @@ p {
   font-family: var(--font-text);
 }
 
-
 *,
 *:before,
 *:after {
@@ -36,7 +35,6 @@ html {
 
 body {
   box-sizing: border-box;
-  /* height: 1500px;  */
 }
 
 /* Utility Classes  */
@@ -54,9 +52,15 @@ body {
   height: 1px; 
 }
 
-/* .preload *{
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
-} */
+
+@media only screen and (min-width: 1600px) {
+  .container {
+    max-width: 1500px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 50%;
+  }
+}

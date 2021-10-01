@@ -14,13 +14,19 @@ const useVisible = (ref, options) => {
    useEffect(() => {
       const observer = new IntersectionObserver(
          ([entry]) => {
+            // if card component is already shown, doesn't revert back to hidden state
+            if (entry.target.dataset.type === 'card' && !entry.isIntersecting){
+               return
+            }
+            if (entry.target.dataset.type === 'about' && !entry.isIntersecting){
+               return
+            }
             setIsVisible(entry.isIntersecting)
-            // console.log(entry.isIntersecting)
          }, options)
 
       observer.observe(ref.current)
       // Remove the observer as soon as the component is unmounted
-      // return () => { observer.disconnect() }
+      return () => { observer.disconnect() }
     }, [ref, options])
   
     return isVisible

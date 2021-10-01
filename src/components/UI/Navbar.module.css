@@ -12,7 +12,19 @@
    font-size: 2.3rem;
    display: flex; 
    justify-content: space-between;
+   align-items: center;
 }
+
+.logo {
+   cursor: pointer;
+   transform: rotate(-45deg);
+   transition: all .2s; 
+}
+
+.logo:hover {
+   transform: rotate(0deg);
+}
+
 
 .links {
    display: flex; 
@@ -23,12 +35,14 @@
    margin-left: 3rem;
    cursor: pointer;
    position: relative;
-
 }
 
-.links li:hover {
-   /* border-bottom: 3px solid grey; 
-   transition: all .5s;  */
+.links a,
+.links a:visited, 
+.links a:active {
+   text-decoration: none;
+   color: inherit;
+   transition: all .2s;
 }
 
 .pageLinks::after {
@@ -69,3 +83,9 @@
       opacity: 1;
    }
 }
+
+@media only screen and (max-width: 500px) {
+   .nav {
+      font-size: 1.8rem;
+   }
+ }
