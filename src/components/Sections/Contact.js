@@ -8,7 +8,7 @@ const Contact = () => {
         <SectionHeader title="Contact" />
         <div className={classes.info}>
           <h1>
-            Please email me at: <span>test@email.com</span> for any business
+            Please email me at: <span>jchoi@gmail.com</span> for any business
             related inquires.
           </h1>
           <div className={classes.social}>
