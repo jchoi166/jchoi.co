@@ -44,7 +44,7 @@ const Work = () => {
             <span className={classes.sidenotePrompt}>
                *** Please hover for note. 
                <span className={classes.sidenoteMessage}>
-               In the time I created this app until now, the Rest
+               Within the time I created this app until now, the Rest
                Countries API was acquired by Apilayer, an API microservices
                provider. The app still functions, however images will be broken.
                I sincerely apologize for the inconvenience! :(
