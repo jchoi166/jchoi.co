@@ -31,7 +31,7 @@ const About = () => {
           visually inspiring.
           <br></br>
           <br></br>
-          My most recent experience is with
+          My most recent experience is with {' '}
           <a
             href="https://zyllion.com/"
             target="_blank"
@@ -43,7 +43,7 @@ const About = () => {
           charge of maintaining their Shopify website using HTML, Css, and
           Liquid, and customizing a new Shopify theme for future deployment.
           <br></br>
-          <br></br>I also work as a tech intern for
+          <br></br>I also work as a tech intern for {' '}
           <a
             href="https://new.lanfest.com/"
             target="_blank"
